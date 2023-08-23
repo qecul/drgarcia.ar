@@ -44,19 +44,23 @@
       <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5493516518301&text=Para%20solicitar%20un%20Sobreturno%20Particular%20-%20estoy%20usando%20el%20boton%20web">SOBRETURNO</a>
 	  <!-- SOBRETURNOS - MODAL => ALERT => BOTON => WHATSAPP  -->
 	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" data-bs-target="#MODAL_SOBRETURNOS" data-bs-toggle="modal" href="#MODAL_SOBRETURNOS">SOBRETURNOS</a>
+	  
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="https://calendly.com/turnos/consulta-a-distancia-internacionaL">INTERNACIONAL</a>
       
 	</li>
 	<li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">PRECIOS</a>
 	<ul class="dropdown-menu">
-		<li><a class="dropdown-item" href="#">CORDOBA 07 2023 </a></li>
+		<li><a class="dropdown-item" href="#">CORDOBA 09 2023 </a></li>
 		<li>
 		<hr class="dropdown-divider" /></li>
-		<li><a class="dropdown-item" href="#">TURNO - $7.000 </a></li>
+		<li><a class="dropdown-item" href="#">TURNO - $8.000 </a></li>
 		<li><a class="dropdown-item" href="#">SOBRE TURNO - $11.000</a></li>
 		<li><a class="dropdown-item" href="#">COSEGURO OSDE - $1.300</a></li>
 		<li><a class="dropdown-item" href="#">RECETAS - $4.000</a></li>
-		<li><a class="dropdown-item" href="#"> CERTIFICADOS - $5.000</a></li>
+		<li><a class="dropdown-item" href="#">CERTIFICADOS - $5.000</a></li>
+		<li><a class="dropdown-item" href="#">APTO / NO APTO - $12.000</a></li>
 		<li><a class="dropdown-item" href="#">INFORMES - $15.000</a></li>
 		<li><a class="dropdown-item" href="#">INTERNACIONAL - USD 50 EUR 50</a></li>
 		<li>
@@ -121,8 +125,9 @@
 
 <!--<div class="alert alert-success" role="alert"><b>VACACIONES  2023 </b> DESDE 18/02/2023 al 6/03/2023 - SOLICITE RECETAS Y CERTIFICADOS CON ANTICIPACION.</div>-->
 <!-- <div class="alert alert-success" role="alert">
-  <b>VACACIONES</b> DESDE 24/12/2022 al 24/01/2023 - SOLICITE RECETAS Y CERTIFICADOS CON ANTICIPACION.
-</div> --><!-- <div class="alert alert-warning" role="alert"> <p>ATENCION PRESENCIAL:SOLO JUEVES A LA TARDE y SABADOS A LA MAÑANA SOLO CONSLTAS PARTICULARES Y OSDE  </p> </div>
+<b>VACACIONES</b> DESDE 24/12/2022 al 24/01/2023 - SOLICITE RECETAS Y CERTIFICADOS CON ANTICIPACION.
+</div> --><!-- <div class="alert alert-warning" role="alert"> 
+<p>ATENCION PRESENCIAL: SOLO JUEVES A LA TARDE y SABADOS A LA MAÑANA SOLO CONSLTAS PARTICULARES Y OSDE  </p> </div>
                     -->
 
 <div class="vstack gap-3">
@@ -139,7 +144,7 @@
 <a class="btn btn-dark" href="https://calendly.com/turnos/consulta-presencial-cba" role="button"><b>TURNO</b> CONSULTA <b>PRESENCIAL</b> </a> 
 <a class="btn btn-dark" href="https://calendly.com/turnos/consulta-particular" role="button">TURNO | <b>PARTICULAR</b></a> 
 <a class="btn btn-dark" href="https://calendly.com/turnos/aptos" role="button">TURNO | <b>APTO</b></a> 
-	  <!-- SOBRETURNOS - MODAL => ALERT => BOTON => WHATSAPP  -->
+<!-- SOBRETURNOS - MODAL => ALERT => BOTON => WHATSAPP  ---- IVR OPCION 5 SMS Y/O WS A SU NUMERO CON INSTRUCIIONES  SOBRETURNO MODAL ALERT EXPLICACION Y LUEGO  BOTON  PEDIDO -->
 <a class="btn btn-dark" href="https://api.whatsapp.com/send?phone=5493516518301&amp;text=Para solicitar un Sobreturno Particular - estoy usando el boton web " role="button"><b>SOBRETURNO | PARTICULAR</b> <!--COVID19--></a> <a class="btn btn-dark" href="https://calendly.com/turnos/osde" role="button">TURNO | <b>OSDE</b></a> <a class="btn btn-dark" href="https://calendly.com/turnos/apross" role="button">TURNO | <b> APROSS | HONORARIO ETICO </b></a> 
 <!--<a class="btn btn-dark" href="https://calendly.com/turnos/control-breve" role="button"><b>TURNO</b> BREVE | ONLINE </a> -->
 <a class="btn btn-dark" href="https://calendly.com/turnos/turno-breve-control-farmacologico" role="button"><b>TURNO</b> BREVE | ONLINE CONTROL </a> 
@@ -567,6 +572,57 @@ Si Ud tiene un turno fijo de psicoterapia semanal o quiencenal este el el metodo
 </div>
 </div>
 </div>
+
+<!--MODAL SOBRETURNO-->
+
+    <div class="container p-2">
+	<div aria-hidden="true" aria-labelledby="MODAL_SOBRETURNOS" class="modal fade" id="MODAL_SOBRETURNOS" tabindex="-1">
+	<div class="modal-dialog">
+	
+	<div class="modal-header">
+<div class="modal-content">
+
+	<h5 class="modal-title p-2 " id="MODAL_SOBRETURNOS">SOBRETURNOS</h5>
+
+	
+	<div class="modal-body">
+		<hr>
+		<br>
+	<div class="alert-warning">	
+	<p>	Para solicitar un sobreturno debe enviar comprobante de pago por whatsapp <a href="pagos.html"></a> </p>
+	</div>
+	<a class="btn btn-info" href="https://api.whatsapp.com/send?phone=5493516518301&text=Para%20solicitar%20un%20Sobreturno%20Particular%20-%20estoy%20usando%20el%20boton%20web y se que debo enviar comprobante de pago para agendar">SOLICITAR SOBRETURNO</a>
+		<!-- SOBRETURNOS - MODAL => ALERT => BOTON => WHATSAPP  --></a> 
+
+	
+	
+	
+	
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+
+	<div class="modal" tabindex="-1">
+		<div class="modal-dialog">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <h5 class="modal-title">Modal title</h5>
+			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+			  <p>Modal body text goes here.</p>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			  <button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	  
 <!-- FOOTER  -->
 <!-- <button data-bs-toggle="tooltip" title="¡Este es un tooltip!">Hover aquí</button> -->
 <hr>
