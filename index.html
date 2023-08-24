@@ -47,6 +47,10 @@
       <a class="dropdown-item" data-bs-target="#MODAL_SOBRETURNOS" data-bs-toggle="modal" href="#MODAL_SOBRETURNOS">SOBRETURNOS</a>
 	  
 	  <div class="dropdown-divider"></div>
+      <a class="dropdown-item" data-bs-target="#MODAL_SOBRETURNO" data-bs-toggle="modal" href="#MODAL_SOBRETURNOS">SOBRETURNOS 2</a>
+	  
+
+	  <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="https://calendly.com/turnos/consulta-a-distancia-internacionaL">INTERNACIONAL</a>
       
 	</li>
@@ -575,60 +579,61 @@ Si Ud tiene un turno fijo de psicoterapia semanal o quiencenal este el el metodo
 
 <!--MODAL SOBRETURNO-->
 
-    <div class="container p-3">
 	
-	<div class="modal" id="MODAL_SOBRETURNOS" tabindex="-1" aria-labelledby="MODAL_SOBRETURNOS">
-	<div class="modal-dialog">
-	
-	<div class="modal-header">
-<div class="modal-content">
+	<div class="modal" id="MODAL_SOBRETURNOS" tabindex="-1">
+			<div class="modal-dialog">
+					<div class="modal-content">
+							<div class="modal-header">
+							<h5 class="modal-title p-2" ><ul>SOBRETURNOS</ul> <ul>TURNOS CON ASIGNACION ASISTIDA</ul> </h5>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+							</div>	
+								<div class="modal-body">
+										
+											<div class="alert alert-warning p-4">	
+												<p>Los sobreturnos asi como los turnos de asignacion manual no se reservan y se agendan cuando se recibe el comprobante de pago del mismo por whatsapp o e-mail.</p>
+													<p>	Por ello para solicitar un sobreturno o turno de asignacion manual debe enviar  <a href="https://mpago.la/2sQbxsW"> comprobante de pago </a> por whatsapp.</p>
+													<p>Se otorgara dentro de las 72hs de recibir el comprabnante en horario fuera de agenda. </p>
+											
+												</div>
+											</div>
+									<a class="btn btn-info P-4 m-5" href="https://api.whatsapp.com/send?phone=5493516518301&text=Para%20solicitar%20un%20Sobreturno%20Particular%20-%20estoy%20usando%20el%20boton%20web y se que debo enviar comprobante de pago para agendar">SOLICITAR SOBRETURNO</a>
+										
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+										<button type="button" class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5493516518301&text=Para%20solicitar%20un%20Sobreturno%20Particular%20-%20estoy%20usando%20el%20boton%20web y se que debo enviar comprobante de pago para agendar">Solicitar Sobreturno</button>
+									  </div>	
+									<!-- SOBRETURNOS - MODAL => ALERT => BOTON => WHATSAPP  --></a> 
 
-	<h5 class="modal-title p-4 " >SOBRETURNOS</h5>
-	<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-
-	
-	<div class="modal-body">
-		<hr>
-		<br>
-	<div class="alert-warning p-4">	
-	<p>	Para solicitar un sobreturno debe enviar  <a href="https://mpago.la/2sQbxsW"> comprobante de pago </a> por whatsapp.</p>
-	<p>Se otorgara dentro de las 72hs en horario fuera de agenda. </p>
-	</div>
-	<hr>
-		<br>
-	<a class="btn btn-info" href="https://api.whatsapp.com/send?phone=5493516518301&text=Para%20solicitar%20un%20Sobreturno%20Particular%20-%20estoy%20usando%20el%20boton%20web y se que debo enviar comprobante de pago para agendar">SOLICITAR SOBRETURNO</a>
-		
-	
-	<!-- SOBRETURNOS - MODAL => ALERT => BOTON => WHATSAPP  --></a> 
-
-	
-	
-	
-	
-	</div>
-	</div>
-	</div>
-
+									
+									
+									
+									
+									</div>
+							</div>
+					</div>
+			</div>
 	</div>
 </div>
-
-	<div class="modal" tabindex="-1">
+	<div class="modal" id="MODAL_SOBRETURNO" tabindex="-1">
 		<div class="modal-dialog">
 		  <div class="modal-content">
 			<div class="modal-header">
-			  <h5 class="modal-title">Modal title</h5>
+			  <h5 class="modal-title">SOBRETURNO</h5>
 			  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-			</div>
-			<div class="modal-body">
-			  <p>Modal body text goes here.</p>
-			</div>
-			<div class="modal-footer">
-			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-			  <button type="button" class="btn btn-primary">Save changes</button>
+						</div>
+							<div class="modal-body">
+								<p>Los sobreturnos, asi como los <b> turnos de asignacion manual</b>, no se reservan y se agendan cuando se recibe el comprobante de pago del mismo por whatsapp o e-mail.</p>
+								<p>Por ello para solicitar un sobreturno o turno de asignacion manual debe enviar  <a href="https://mpago.la/2sQbxsW"> comprobante de pago </a> por whatsapp.</p>
+								<p>Se otorgara dentro de las 72hs de recibir el comprabnante en horario fuera de agenda.</p>
+						
+							</div>
+						<div class="modal-footer">
+			  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			  <button type="button" class="btn btn-primary" href="https://api.whatsapp.com/send?phone=5493516518301&text=Para%20solicitar%20un%20Sobreturno%20Particular%20-%20estoy%20usando%20el%20boton%20web y se que debo enviar comprobante de pago para agendar">Solicitar Sobreturno</button>
 			</div>
 		  </div>
 		</div>
-	  </div>
+	  
 	  
 <!-- FOOTER  -->
 <!-- <button data-bs-toggle="tooltip" title="¡Este es un tooltip!">Hover aquí</button> -->
