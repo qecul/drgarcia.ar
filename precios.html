@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>proximo index</title>
 
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
 
 <!-- Incluye el archivo precios.js -->
@@ -12,7 +13,105 @@
 
 </head>
 <body>
+    <div class="container">
+        <hr>
+    <nav class="navbar navbar-expand-md bg-info"><hr><a class="navbar-brand" href="#" id="top"><img alt="" border="2" class="d-inline-block align-text-top" height="90" src="/img/drgarciabienvenida_dibujo2022.jpg" width="90" /><img alt="" border="2" class="d-inline-block align-text-top" height="90" src="/img/QR_BA_DRGARCIA_AR.png" width="90" /></a>
+    <hr>
+    <br>
     
+    <a class="navbar-brand" href="#" id="top"><h3><b>Dr Garcia Galvan</b></h3><hr>   | Psiquiatra</a>
+    <!---<a class="navbar-brand" href="#" id="top"><font color="ligth"><b> </b></font></a>-->
+    
+    <!--<h5><a class="navbar-brand" href="#" id="top"><font color="ligth"><b>psiqutra</b></font></a></h5> -->
+    <a class="navbar-brand" href="#" id="top"> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="#">INICIO </a></li>
+        <!--<li class="nav-item"><a class="nav-link" href="http://www.calendly.com/turnos">TURNOS</a></li>-->
+        <li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button">TURNOS</a>
+          <div aria-labelledby="navbarDropdown" class="dropdown-menu">
+            <a class="dropdown-item" href="https://calendly.com/turnos/terapia-on-line">CONSULTA ONLINE</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://calendly.com/turnos/consulta-presencial-cba">PRESENCIAL</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://calendly.com/turnos/consulta-particular">PARTICULAR</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://calendly.com/turnos/osde">OSDE</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://calendly.com/turnos/aptos">APTO / NO APTO</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5493516518301&text=Para%20solicitar%20un%20Sobreturno%20Particular%20-%20estoy%20usando%20el%20boton%20web">SOBRETURNO</a>
+          <!-- SOBRETURNOS - MODAL => ALERT => BOTON => WHATSAPP  -->
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" data-bs-target="#MODAL_SOBRETURNOS" data-bs-toggle="modal" href="#MODAL_SOBRETURNOS">SOBRETURNOS</a>
+          
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" data-bs-target="#MODAL_SOBRETURNO" data-bs-toggle="modal" href="#MODAL_SOBRETURNOS">SOBRETURNOS 2</a>
+          
+    
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="https://calendly.com/turnos/consulta-a-distancia-internacionaL">INTERNACIONAL</a>
+          
+        </li>
+        <li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">PRECIOS</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">CORDOBA 09 2023 </a></li>
+            <li>
+            <hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">TURNO - $<span data-precio-key="particular" class="precio"></span> </a></li>
+            <li><a class="dropdown-item" href="#">SOBRE TURNO - $<span data-precio-key="sobreturno" class="precio"></span></a></li>
+            <li><a class="dropdown-item" href="#">COSEGURO OSDE - $<span data-precio-key="osde" class="precio"></span></a></li>
+            <li><a class="dropdown-item" href="#">RECETAS - $<span data-precio-key="receta" class="precio"></span></a></li>
+            <li><a class="dropdown-item" href="#">CERTIFICADOS - $<span data-precio-key="certificado" class="precio"></span></a></li>
+            <li><a class="dropdown-item" href="#">APTO / NO APTO - $<span data-precio-key="apto" class="precio"></a></li>
+            <li><a class="dropdown-item" href="#">INFORMES - $<span data-precio-key="informe" class="precio"></a></li>
+            <li><a class="dropdown-item" href="#">INTERNACIONAL - USD 50 EUR 50</a></li>
+            <li>
+            <hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" class="nav-link" data-bs-target="#MODAL_PRECIOS" data-bs-toggle="modal" href="#MODAL_PRECIOS"> VER MAS <!-- PRECIOS--></a></li>
+        </ul>
+        </li>
+        <!-- <li><hr class="dropdown-divider"></li> --><!-- PAGOS  -->
+        <li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">PAGOS</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pagos.html">TRANSFERENCIAS</a></li>
+              <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item" href="pagos.html">TARJETAS - DBT y CRDT</a></li>
+              <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item" href="pagos.html">MERCADO PAGO</a></li>
+              <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item" href="https://cmpc.org.ar/se-encuentran-vigentes-los-nuevos-aranceles-minimos-de-caracter-etico/">HONORARIOS MINIMOS ETICOS CMPC</a></li>
+        </ul>
+        </li>
+        <!-- INFORMACION -->
+        <li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="" role="button">INFO</a>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#antecedentes">ANTECEDENTES</a></li>
+              <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item" href="#PERFIL">PERFIL ASISTENCIAL</a></li>
+              <div class="dropdown-divider"></div>
+            <li><a class="dropdown-item" href="#publicaciones">PUBLICACIONES</a></li>
+        </ul>
+        </li>
+        <!-- </li> --><!-- CONTACTO BS 4 -->
+        <li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="" role="button">CONTACTO</a>
+        <div class="dropdown-menu"><a class="dropdown-item" href="#">UTILICE TEXTO </a> 
+          <div class="dropdown-divider"></div><!-- <div class="dropdown-divider"></div> --> <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5493516518301">POR WHATSAPP</a> 
+            <div class="dropdown-divider"></div>
+          <!-- <div class="dropdown-divider"></div> --> <a class="dropdown-item" href="sms://+543516518301">POR SMS</a> 
+            <div class="dropdown-divider"></div><!-- <div class="dropdown-divider"></div> --> <a class="dropdown-item" href="mailto:garcia.luistomasnicolas@gmail.com">POR E-MAIL</a></div>
+    
+        <ul>
+        </ul>
+        </li>
+    </ul>
+    </div>
+    </nav>
+    </div>
 
 
 
@@ -44,5 +143,10 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 </script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </body>
 </html>
