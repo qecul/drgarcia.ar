@@ -9,5 +9,7 @@ var precios = {
     informe: 18000,
     apto:  14000,
     noapto: 14000,
+    portacion: 18000,
+    mes: "SEPTIEMBRE 2023",
     // ... otros valores de precios ...
 };
