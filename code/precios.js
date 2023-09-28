@@ -1,16 +1,16 @@
 var precios = {
-    particular: 8000,
+    particular: 10000,
     presencial: 10000,
-    sobreturno: 12000,
-    online: 8000,
-    osde: 1300,
-    receta: 4000,
-    certificado: 6000,
-    informe: 18000,
-    apto:  14000,
-    noapto: 14000,
-    portacion: 18000,
-    mes: "SEPTIEMBRE 2023",
+    sobreturno: 15000,
+    online: 10000,
+    osde: 1400,
+    receta: 6000,
+    certificado: 8000,
+    informe: 25000,
+    apto:  18000,
+    noapto: 18000,
+    portacion: 25000,
+    mes: "OCTUBRE 2023",
     // ... otros valores de precios ...
 };
 

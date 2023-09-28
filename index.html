@@ -7,7 +7,7 @@
 	<meta name="author" content="Luis Tomas Nicolas Garcia Galvan - Psiquiatra en Cordoba "><!-- CSS only -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 	<title>Doctor Garcia Galvan - Psiquiatra de Cordoba</title>
-	
+	<script src="/code/precios.js"></script>
 </head>
 <body>
 <div class="container">
@@ -55,22 +55,24 @@
       
 	</li>
 	<li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">PRECIOS</a>
-	<ul class="dropdown-menu">
-		<li><a class="dropdown-item" href="#">CORDOBA 09 2023 </a></li>
-		<li>
-		<hr class="dropdown-divider" /></li>
-		<li><a class="dropdown-item" href="#">TURNO - $8.000 </a></li>
-		<li><a class="dropdown-item" href="#">SOBRE TURNO - $12.000</a></li>
-		<li><a class="dropdown-item" href="#">COSEGURO OSDE - $1.300</a></li>
-		<li><a class="dropdown-item" href="#">RECETAS - $4.000</a></li>
-		<li><a class="dropdown-item" href="#">CERTIFICADOS - $6.000</a></li>
-		<li><a class="dropdown-item" href="#">APTO / NO APTO - $14.000</a></li>
-		<li><a class="dropdown-item" href="#">INFORMES - $18.000</a></li>
-		<li><a class="dropdown-item" href="#">INTERNACIONAL - USD 50 EUR 50</a></li>
-		<li>
-		<hr class="dropdown-divider" /></li>
-		<li><a class="dropdown-item" class="nav-link" data-bs-target="#MODAL_PRECIOS" data-bs-toggle="modal" href="#MODAL_PRECIOS"> VER MAS <!-- PRECIOS--></a></li>
-	</ul>
+	
+		<ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">CORDOBA <span data-precio-key="mes" class="precio"> 2023 </a></li>
+            <li>
+            <hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">TURNO - $<span data-precio-key="particular" class="precio"></span> </a></li>
+            <li><a class="dropdown-item" href="#">SOBRE TURNO - $<span data-precio-key="sobreturno" class="precio"></span></a></li>
+            <li><a class="dropdown-item" href="#">COSEGURO OSDE - $<span data-precio-key="osde" class="precio"></span></a></li>
+            <li><a class="dropdown-item" href="#">RECETAS - $<span data-precio-key="receta" class="precio"></span></a></li>
+            <li><a class="dropdown-item" href="#">CERTIFICADOS - $<span data-precio-key="certificado" class="precio"></span></a></li>
+            <li><a class="dropdown-item" href="#">APTO / NO APTO - $<span data-precio-key="apto" class="precio"></a></li>
+            <li><a class="dropdown-item" href="#">INFORMES - $<span data-precio-key="informe" class="precio"></a></li>
+            <li><a class="dropdown-item" href="#">INTERNACIONAL - USD 50 EUR 50</a></li>
+            <li>
+            <hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" class="nav-link" data-bs-target="#MODAL_PRECIOS" data-bs-toggle="modal" href="#MODAL_PRECIOS"> VER MAS <!-- PRECIOS--></a></li>
+        </ul>
+		
 	</li>
 	<!-- <li><hr class="dropdown-divider"></li> --><!-- PAGOS  -->
 	<li class="nav-item dropdown"><a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">PAGOS</a>
@@ -502,80 +504,85 @@ Si Ud tiene un turno fijo de psicoterapia semanal o quiencenal este el el metodo
 </div>
 
 <p></p>
+
 <!--MODAL PRECIOS-->
 
 <div class="container">
-<div aria-hidden="true" aria-labelledby="MODAL_PRECIOS" class="modal fade" id="MODAL_PRECIOS" tabindex="-1">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="MODAL_PRECIOS">PRECIOS DESDE SEPTIEMBRE 2023</h5>
-<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button></div>
-
-<div class="modal-body">
-<div class="accordion" id="MODAL_PRECIOS">
-<div class="accordion-item">
-<h2 class="accordion-header" id="precios_header"><button aria-controls="collapseOne" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">CONSULTA 7.000$ - PSICOTERAPIA 7.000$ - RECETA 4.000$ - SOBRETURNO $11.000</button></h2>
-
-<div aria-labelledby="precios_header" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseOne">
-<div class="accordion-body">
-<p><strong>CONSULTA PARTICULAR </strong> $8.000</p>
-
-<p><strong>PSICOTERAPIA PARTICULAR </strong> $8.000</p>
-
-<p><strong>SOBRETURNO CONSULTA PARTICULAR </strong> $12.000</p>
-
-<hr />
-<p><strong>CONSULTA PARTICULAR </strong>- es la consulta SIN recurrencia semanal. Se llama PSICOTERAPIA a toda consulta iterativa frecuencia fija (semanal o quincenal)</p>
-
-<p><strong>OSDE </strong>Brinda cobertura econ&oacute;mica a 30 sesiones de psicoterapia al a&ntilde;o - aproximadamente un a&ntilde;o de psicoterapia de frecuencia quincenal, o seis consultas de control farmacol&oacute;gico anual. Todos los planes tienen COPAGO</p>
-
-<p><strong>RECETA FUERA DE TURNO </strong> - es la RECETA SOLICITADA 7 DIAS DESPUES DEL TURNO <!-- o las solicitadas en los minutos finales del mismo --> .</p>
-
-<p><strong>SOBRETURNO </strong>CONSULTA PARTICULAR - es la consulta otorgada por fuera de horario de agenda o en forma manual</p>
-</div>
-</div>
-</div>
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="psicoterapias"><button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">APTO PSIQUIATRICO / NO APTOS <i>&quot;CARPETA MEDICA&quot;</i></button></h2>
-
-<div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwo">
-<div class="accordion-body">
-<p><strong>APTO PSIQUIATRICO - LABORAL Y ACAD&Eacute;MICO</strong> $ 14.000 $</p>
-
-<p><strong>APTO PSIQUIATRICO - ACTIVIDAD AERONAUTICA ANAC </strong> $ 14.000 $</p>
-
-<p><strong>APTO PSIQUIATRICO FUERZAS DE SEGURIDAD CON PORTACION DE ARMAMENTO</strong> 18.000 $ (el valor incluye dos consultas psiquiatricas en dias no consecutivos y el informe).</p>
-
-<p>NO APTO PSIQUIATRICO (&quot;CARPETA MEDICA&quot;) 14.000 $ INCLUYE PRECIO DE UNA CONSULTA PARTICULAR MAS EL CERTIFICADO / Habitualmente 30 dias de reposo</p>
-</div>
-</div>
-</div>
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="headingFour"><button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">COPAGO OSDE $ 1300 - TODOS LOS PLANES</button></h2>
-
-<div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseFour">
-<div class="accordion-body">
-<p><strong>OSDE </strong>$ 1300</p>
-</div>
-</div>
-</div>
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="headingThree"><button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">INFORMES PSIQUIATRICOS</button></h2>
-
-<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseThree">
-<div class="accordion-body"><strong>$ 18000</strong> Por carilla - valor estimativo dependiendo la complejidad (seg&uacute;n estimaci&oacute;n de una hora medica por carilla) .</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
+	<div aria-hidden="true" aria-labelledby="MODAL_PRECIOS" class="modal fade" id="MODAL_PRECIOS" tabindex="-1">
+	<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h5 class="modal-title" id="MODAL_PRECIOS">PRECIOS DESDE <span data-precio-key="mes" class="precio"> 2023</h5>
+	<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button></div>
+	
+	<div class="modal-body">
+	<div class="accordion" id="MODAL_PRECIOS">
+	<div class="accordion-item">
+	<h2 class="accordion-header" id="precios_header">
+	<button aria-controls="collapseOne" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button"> CONSULTAS RECETAS CERTIFICADOS</button></h2>
+	
+	<div aria-labelledby="precios_header" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseOne">
+	<div class="accordion-body">
+	<p><strong>CONSULTA PARTICULAR </strong> $<span data-precio-key="particular" class="precio"></span> </p>
+	
+	<p><strong>PSICOTERAPIA PARTICULAR </strong> $<span data-precio-key="particular" class="precio"></span> </p>
+	
+	<p><strong>SOBRETURNO CONSULTA PARTICULAR </strong> $<span data-precio-key="sobreturno" class="precio"></span> </p>
+	<p><strong>RECETA FUERA DE TURNO</strong> $ <span data-precio-key="receta" class="precio"></span> </p>
+	<p><strong>CERTIFICADOS</strong> $ <span data-precio-key="certificado" class="precio"></span> </p>
+	<br> CONSULTA - $  <span data-precio-key="particular" class="precio"></span> <br> SOBRETURNO - $ <span data-precio-key="sobreturno" class="precio"></span> <br> ONLINE - $ <span data-precio-key="online" class="precio"></span> <br> RECETA - $ <span data-precio-key="receta" class="precio"></span>- 
+	<hr />
+	<p><strong>CONSULTA PARTICULAR </strong>- es la consulta SIN recurrencia semanal. Se llama PSICOTERAPIA a toda consulta iterativa frecuencia fija (semanal o quincenal)</p>
+	
+	<p><strong>OSDE </strong>Brinda cobertura econ&oacute;mica a 30 sesiones de psicoterapia al a&ntilde;o - aproximadamente un a&ntilde;o de psicoterapia de frecuencia quincenal, o seis consultas de control farmacol&oacute;gico anual. Todos los planes tienen COPAGO</p>
+	
+	<p><strong>RECETA FUERA DE TURNO </strong> - es la RECETA SOLICITADA 7 DIAS DESPUES DEL TURNO <!-- o las solicitadas en los minutos finales del mismo --> .</p>
+	
+	<p><strong>SOBRETURNO </strong>CONSULTA PARTICULAR - es la consulta otorgada por fuera de horario de agenda o en forma manual</p>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion-item">
+	<h2 class="accordion-header" id="psicoterapias"><button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">APTO PSIQUIATRICO / NO APTOS <i>&quot;CARPETA MEDICA&quot;</i></button></h2>
+	
+	<div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwo">
+	<div class="accordion-body">
+	<p><strong>APTO PSIQUIATRICO - LABORAL Y ACAD&Eacute;MICO</strong> $ <span data-precio-key="apto" class="precio"></span> </p>
+	<p><strong>APTO PSIQUIATRICO - LABORAL Y ACAD&Eacute;MICO</strong> $ <span data-precio-key="apto" class="precio"></span> </p>
+	
+	<p><strong>APTO PSIQUIATRICO - ACTIVIDAD AERONAUTICA ANAC </strong> $ <span data-precio-key="apto" class="precio"></span></p>
+	
+	<p><strong>APTO PSIQUIATRICO FUERZAS DE SEGURIDAD CON PORTACION DE ARMAMENTO</strong> $<span data-precio-key="portacion" + 4000 class="precio"></span>  (el valor incluye dos consultas psiquiatricas en dias no consecutivos y el informe).</p>
+	
+	<p>NO APTO PSIQUIATRICO (&quot;CARPETA MEDICA&quot;) 14.000 $ INCLUYE PRECIO DE UNA CONSULTA PARTICULAR MAS EL CERTIFICADO / Habitualmente 30 dias de reposo</p>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion-item">
+	<h2 class="accordion-header" id="headingFour"><button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">COPAGO OSDE - TODOS LOS PLANES</button></h2>
+	
+	<div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseFour">
+	<div class="accordion-body">
+	<p><strong>OSDE </strong>$ <span data-precio-key="osde" class="precio"></span> </p>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion-item">
+	<h2 class="accordion-header" id="headingThree"><button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">INFORMES PSIQUIATRICOS</button></h2>
+	
+	<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseThree">
+	<div class="accordion-body"><strong>$ <span data-precio-key="informe" class="precio"></span> </strong> Por carilla - valor estimativo dependiendo la complejidad (seg&uacute;n estimaci&oacute;n de una hora medica por carilla) .</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
 
 <!--MODAL SOBRETURNO-->
 
@@ -654,6 +661,29 @@ Si Ud tiene un turno fijo de psicoterapia semanal o quiencenal este el el metodo
 <br>
 <hr>
 </footer>
+<!-- Ejemplo en un elemento <span> -->
+	<span data-precio-key="particular" class="precio"></span>
+	<span data-precio-key="sobreturno" class="precio"></span>
+	<span data-precio-key="online" class="precio"></span>
+	<span data-precio-key="sobreturno" class="precio"></span>
+	<span data-precio-key="presencial" class="precio"></span>
+	<span data-precio-key="presencial" class="precio"></span>
+	<span data-precio-key="presencial" class="precio"></span>
+	<!-- ... otros elementos ... -->
+	
+	<!-- Tu script para actualizar los valores -->
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		// Obtén todos los elementos con la clase "precio"
+		var elementosPrecio = document.querySelectorAll('.precio');
+	
+		// Itera a través de los elementos y actualiza sus contenidos
+		elementosPrecio.forEach(function(elemento) {
+			var precioKey = elemento.getAttribute('data-precio-key');
+			elemento.textContent = precios[precioKey];
+		});
+	});
+	</script>
 <!-- Optional JavaScript --><!-- jQuery first, then Popper.js, then Bootstrap JS
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
