@@ -4,6 +4,7 @@
 	<link href="favicon2.ico" rel="shortcut icon" /><!-- Bootstrap CSS -->
 	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" rel="stylesheet" />
 	<title>Doctor Garcia Galvan - Medios de pago electronico</title>
+  <script src="/code/precios.js"></script>
 </head>
 <body>
 <div class="container">
@@ -32,7 +33,7 @@
       <div class="dropdown-divider"></div>
       <a class="dropdown-item" href="https://api.whatsapp.com/send?phone=5493516518301&text=Para%20solicitar%20un%20Sobreturno%20Particular%20-%20estoy%20usando%20el%20boton%20web">SOBRETURNO</a>
           </li>
-	<li class="nav-item"><a class="nav-link" data-bs-target="#Mprecios1" data-bs-toggle="modal" href="#Mprecios1">PRECIOS</a></li>
+	<li class="nav-item"><a class="nav-link" data-bs-target="#MODAL_PRECIOS" data-bs-toggle="modal" href="#MODAL_PRECIOS">PRECIOS</a></li>
 	
 	<li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" id="navbarDropdown" role="button">COMO PAGAR</a>
 	<div aria-labelledby="navbarDropdown" class="dropdown-menu"><a class="dropdown-item" href="#tarjetasde debito">PAGO POR TRASFERENCIA</a>
@@ -163,90 +164,110 @@ document.execCommand("copy");
 alert("Copied the text: " + copyText.value);
 }
 </script><!-- The text field --><!-- The button used to copy the text --><!-- Optional JavaScript --><!-- jQuery first, then Popper.js, then Bootstrap JS --><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--MODAL PRECIOS-->
 
-<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="Mprecios1" tabindex="-1">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel">PRECIOS DESDE SEPTIEMBRE DE 2023</h5>
-<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button></div>
+<div class="container">
+	<div aria-hidden="true" aria-labelledby="MODAL_PRECIOS" class="modal fade" id="MODAL_PRECIOS" tabindex="-1">
+	<div class="modal-dialog">
+	<div class="modal-content">
+	<div class="modal-header">
+	<h5 class="modal-title" id="MODAL_PRECIOS">PRECIOS DESDE <span data-precio-key="mes" class="precio"> 2023</h5>
+	<button aria-label="Close" class="btn-close" data-bs-dismiss="modal" type="button"></button></div>
+	
+	<div class="modal-body">
+	<div class="accordion" id="MODAL_PRECIOS">
+	<div class="accordion-item">
+	<h2 class="accordion-header" id="precios_header">
+	<button aria-controls="collapseOne" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button"> CONSULTAS RECETAS CERTIFICADOS</button></h2>
+	
+	<div aria-labelledby="precios_header" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseOne">
+	<div class="accordion-body">
+	<p><strong>CONSULTA PARTICULAR </strong> $<span data-precio-key="particular" class="precio"></span> </p>
+	
+	<p><strong>PSICOTERAPIA PARTICULAR </strong> $<span data-precio-key="particular" class="precio"></span> </p>
+	
+	<p><strong>SOBRETURNO CONSULTA PARTICULAR </strong> $<span data-precio-key="sobreturno" class="precio"></span> </p>
+	<p><strong>RECETA FUERA DE TURNO</strong> $ <span data-precio-key="receta" class="precio"></span> </p>
+	<p><strong>CERTIFICADOS</strong> $ <span data-precio-key="certificado" class="precio"></span> </p>
+	<br> CONSULTA - $  <span data-precio-key="particular" class="precio"></span> <br> SOBRETURNO - $ <span data-precio-key="sobreturno" class="precio"></span> <br> ONLINE - $ <span data-precio-key="online" class="precio"></span> <br> RECETA - $ <span data-precio-key="receta" class="precio"></span>- 
+	<hr />
+	<p><strong>CONSULTA PARTICULAR </strong>- es la consulta SIN recurrencia semanal. Se llama PSICOTERAPIA a toda consulta iterativa frecuencia fija (semanal o quincenal)</p>
+	
+	<p><strong>OSDE </strong>Brinda cobertura econ&oacute;mica a 30 sesiones de psicoterapia al a&ntilde;o - aproximadamente un a&ntilde;o de psicoterapia de frecuencia quincenal, o seis consultas de control farmacol&oacute;gico anual. Todos los planes tienen COPAGO</p>
+	
+	<p><strong>RECETA FUERA DE TURNO </strong> - es la RECETA SOLICITADA 7 DIAS DESPUES DEL TURNO <!-- o las solicitadas en los minutos finales del mismo --> .</p>
+	
+	<p><strong>SOBRETURNO </strong>CONSULTA PARTICULAR - es la consulta otorgada por fuera de horario de agenda o en forma manual</p>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion-item">
+	<h2 class="accordion-header" id="psicoterapias"><button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">APTO PSIQUIATRICO / NO APTOS <i>&quot;CARPETA MEDICA&quot;</i></button></h2>
+	
+	<div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwo">
+	<div class="accordion-body">
+	<p><strong>APTO PSIQUIATRICO - LABORAL Y ACAD&Eacute;MICO</strong> $ <span data-precio-key="apto" class="precio"></span> </p>
+	<p><strong>APTO PSIQUIATRICO - LABORAL Y ACAD&Eacute;MICO</strong> $ <span data-precio-key="apto" class="precio"></span> </p>
+	
+	<p><strong>APTO PSIQUIATRICO - ACTIVIDAD AERONAUTICA ANAC </strong> $ <span data-precio-key="apto" class="precio"></span></p>
+	
+	<p><strong>APTO PSIQUIATRICO FUERZAS DE SEGURIDAD CON PORTACION DE ARMAMENTO</strong> $<span data-precio-key="portacion" + 4000 class="precio"></span>  (el valor incluye dos consultas psiquiatricas en dias no consecutivos y el informe).</p>
+	
+	<p>NO APTO PSIQUIATRICO (&quot;CARPETA MEDICA&quot;) 14.000 $ INCLUYE PRECIO DE UNA CONSULTA PARTICULAR MAS EL CERTIFICADO / Habitualmente 30 dias de reposo</p>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion-item">
+	<h2 class="accordion-header" id="headingFour"><button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">COPAGO OSDE - TODOS LOS PLANES</button></h2>
+	
+	<div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseFour">
+	<div class="accordion-body">
+	<p><strong>OSDE </strong>$ <span data-precio-key="osde" class="precio"></span> </p>
+	</div>
+	</div>
+	</div>
+	
+	<div class="accordion-item">
+	<h2 class="accordion-header" id="headingThree"><button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">INFORMES PSIQUIATRICOS</button></h2>
+	
+	<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseThree">
+	<div class="accordion-body"><strong>$ <span data-precio-key="informe" class="precio"></span> </strong> Por carilla - valor estimativo dependiendo la complejidad (seg&uacute;n estimaci&oacute;n de una hora medica por carilla) .</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
 
-<div class="modal-body">
-<div class="accordion" id="precios">
-<div class="accordion-item">
-<h2 class="accordion-header" id="precio1"><button aria-controls="collapseOne" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseOne" data-bs-toggle="collapse" type="button">CONSULTA PARTICULAR Y APTOS</button></h2>
-
-<div aria-labelledby="headingOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseOne">
-<div class="accordion-body">
-<p><strong>CONSULTA PARTICULAR / PSICOTERAPIA </strong> $8000 <a href="https://mpago.la/2XsdEQM">Pagar</a></p>
-
-<p><b>SOBRETURNO</b></p>
-$12.000 <a href="https://mpago.la/2sQbxsW">Pagar</a>
-
-<p><strong>CONSULTA PARTICULAR CABA </strong> $15.000 <a href="https://mpago.la/2EjfB1G">Pagar</a></p>
-
-<p>Valor ajustado a los costos de matriculaci&oacute;n y locaci&oacute;n en el area y concordancia al valor de la consulta en el mercado local de origen del consultante.</p>
-
-<p><strong>APTO PSIQUIATRICO - LABORAL Y ACAD&Eacute;MICO</strong> $14.000 <a href="https://mpago.la/2feRzA9">Pagar</a></p>
-
-<p><strong>APTO PSIQUIATRICO ANAC AERONAUTICA </strong> $14.000 <a href="https://mpago.la/2yRNGfA">Pagar</a></p>
-
-<p><strong>APTO PSIQUIATRICO FUERZAS DE SEGURIDAD CON PORTACION DE ARMAMENTO</strong> $ 18000 (el valor incluye dos consultas psiquiatricas en dias no consecutivos y el informe)</p>
-
-<p><strong>RECETA FUERA DE TURNO - </strong> $4500 <a href="https://mpago.la/23SXiWf">Pagar</a></p>
-</div>
-</div>
-</div>
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="headingTwo"><button aria-controls="collapseTwo" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseTwo" data-bs-toggle="collapse" type="button">PSICOTERAPIAS</button></h2>
-
-<div aria-labelledby="headingTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseTwo">
-<div class="accordion-body">
-<p><strong>PARTICULAR $ 8000 - Este es el valor de la consulta de psicoterapia .</strong> Se llama terapia a toda consulta iterativa con recurrencias periodicas fijas semanales o quincenales.</p>
-
-<p><strong>OSDE </strong> <a href="https://mpago.la/1P8b4TK">Pagar</a>Cubre 30 sesiones al a&ntilde;o - aproximadamente frecuencia semanal</p>
-</div>
-</div>
-</div>
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="headingFour"><button aria-controls="collapseFour" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseFour" data-bs-toggle="collapse" type="button">COSEGUROS</button></h2>
-
-<div aria-labelledby="headingFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseFour">
-<div class="accordion-body">
-<p><strong>OSDE </strong>$ 1.400 <a href="https://mpago.la/1P8b4TK">Pagar</a></p>
-</div>
-</div>
-</div>
-
-<div class="accordion-item">
-<h2 class="accordion-header" id="headingThree"><button aria-controls="collapseThree" aria-expanded="false" class="accordion-button collapsed" data-bs-target="#collapseThree" data-bs-toggle="collapse" type="button">INFORMES PSIQUIATRICOS</button></h2>
-
-<div aria-labelledby="headingThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample" id="collapseThree">
-<div class="accordion-body"><strong>$ 18000</strong> Por carilla - valor estimativo</div>
-</div>
-</div>
-
-<div>
-<p></p>
-
-<p></p>
-
-<hr />
-<p></p>
-
-<p>Si Ud puede ver estos valores, es por que Usted, interactu&oacute; con el codigo de esta pagina y presion&oacute; el bot&oacute;n up supra y asi solicit&oacute; la visibilizacion de los precios, estos valores no pueden ser indexados por buscador alguno ni estan publicados en la pagina principal en concordancia con el regimen de publicidad impuesto por el Consejo de Medico de la Provincia de Cordoba y otros. Los Valores se proveen solo a fines informativos y no publicitarios. Esta informacion se provee a fin que el usuario del sitio pueda decidir si el importe se ajusta a sus posibilidades antes de consultar. Los valores podran ser ajustados de acuerdo al c&oacute;digo de &aacute;rea local del consultante.</p>
-</div>
-</div>
-</div>
-
-<div class="modal-footer"><button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Cerrar</button></div>
-</div>
-</div>
-</div>
 <br><hr>
 <footer>
+  <!-- Elementos <span> -->
+	<span data-precio-key="particular" class="precio"></span>
+	<span data-precio-key="sobreturno" class="precio"></span>
+	<span data-precio-key="online" class="precio"></span>
+	<span data-precio-key="sobreturno" class="precio"></span>
+	<span data-precio-key="presencial" class="precio"></span>
+	<span data-precio-key="presencial" class="precio"></span>
+	<span data-precio-key="presencial" class="precio"></span>
+	<!-- ... otros elementos ... -->
+	
+	<!-- Tu script para actualizar los valores -->
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		// Obtén todos los elementos con la clase "precio"
+		var elementosPrecio = document.querySelectorAll('.precio');
+	
+		// Itera a través de los elementos y actualiza sus contenidos
+		elementosPrecio.forEach(function(elemento) {
+			var precioKey = elemento.getAttribute('data-precio-key');
+			elemento.textContent = precios[precioKey];
+		});
+	});
+	</script>
   <div id="paypal-button-container"></div>
     <p id="result-message"></p>
     <!-- Replace the "test" client-id value with your client-id -->
