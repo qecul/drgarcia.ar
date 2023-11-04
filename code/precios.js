@@ -10,6 +10,7 @@ var precios = {
     noapto: 18000,
     portacion: 25000,
     mes: "OCTUBRE 2023",
+    mes: "NOVIEMBRE 2023",
     // ... otros valores de precios ...
 };
 
