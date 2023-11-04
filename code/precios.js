@@ -3,7 +3,6 @@ var precios = {
     presencial: 10000,
     sobreturno: 15000,
     online: 10000,
-    osde: 1400,
     receta: 6000,
     certificado: 8000,
     informe: 25000,
