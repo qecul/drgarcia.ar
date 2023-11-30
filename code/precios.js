@@ -4,6 +4,7 @@ var precios = {
     particular: 10000,
     presencial: 10000,
     sobreturno: 15000,
+    primer sobreturno: 18000,
     online: 10000,
     osde: 1700,
     receta: 6000,
@@ -52,12 +53,14 @@ var precios = {
     particular: precioConsultaParticularDolares * valorDolarBlue,
     presencial: precioConsultaParticularDolares * valorDolarBlue,
     sobreturno: (precioConsultaParticularDolares * 1.5) * valorDolarBlue,
+    sobreturnoprimero: (precioConsultaParticularDolares * 1.8) * valorDolarBlue,
     online: precioConsultaParticularDolares * valorDolarBlue,
     osde: (osdecoseguro),
     receta: (precioConsultaParticularDolares * 0.6) * valorDolarBlue, // Aquí añades 10 USD al precio de la consulta
     certificado: (precioConsultaParticularDolares * 0.8) * valorDolarBlue,
     informe: (precioConsultaParticularDolares * 2.5) * valorDolarBlue,
     apto: (precioConsultaParticularDolares + (precioConsultaParticularDolares * 0.8)) * valorDolarBlue,
+    aptoanac: (precioConsultaParticularDolares + (precioConsultaParticularDolares * 1.3)) * valorDolarBlue,
     noapto: (precioConsultaParticularDolares + (precioConsultaParticularDolares * 0.8)) * valorDolarBlue,
     portacion: (precioConsultaParticularDolares * 2.5) * valorDolarBlue,
     // 'caba' se calcula después de la creación del objeto 'precios'
