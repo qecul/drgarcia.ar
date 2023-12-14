@@ -41,11 +41,11 @@ var preciosCABA = obtenerPreciosGba(30); // Aumento del 30%
 
 */
 // Supongamos que el valor actual del dolar blue es de 200 pesos.
-const valorDolarBlue = 1000;
+const valorDolarBlue = 1200;
 
 // Precios base en dólares
 const precioConsultaParticularDolares = 10; 
-const osdecoseguro = 1700;
+const osdecoseguro = 1900;
 
 // Definimos los precios en pesos, aplicando la conversión del dolar blue.
 var precios = {
@@ -56,15 +56,15 @@ var precios = {
     sobreturnoprimero: (precioConsultaParticularDolares * 1.8) * valorDolarBlue,
     online: precioConsultaParticularDolares * valorDolarBlue,
     osde: (osdecoseguro),
-    receta: (precioConsultaParticularDolares * 0.6) * valorDolarBlue, // Aquí añades 10 USD al precio de la consulta
-    certificado: (precioConsultaParticularDolares * 0.8) * valorDolarBlue,
+    receta: (precioConsultaParticularDolares * 0.7) * valorDolarBlue, // Aquí añades 10 USD al precio de la consulta
+    certificado: (precioConsultaParticularDolares * 0.7) * valorDolarBlue, // PUEDE SER 0.8
     informe: (precioConsultaParticularDolares * 2.5) * valorDolarBlue,
     apto: (precioConsultaParticularDolares + (precioConsultaParticularDolares * 0.8)) * valorDolarBlue,
     aptoanac: (precioConsultaParticularDolares + (precioConsultaParticularDolares * 1.3)) * valorDolarBlue,
     noapto: (precioConsultaParticularDolares + (precioConsultaParticularDolares * 0.8)) * valorDolarBlue,
     portacion: (precioConsultaParticularDolares * 2.5) * valorDolarBlue,
     // 'caba' se calcula después de la creación del objeto 'precios'
-    mes: "NOVIEMBRE 2023"
+    mes: "DICIEMBRE 2023"
 };
 
 // Ahora podemos añadir 'caba' al objeto 'precios'.
