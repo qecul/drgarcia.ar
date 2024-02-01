@@ -41,11 +41,11 @@ var preciosCABA = obtenerPreciosGba(30); // Aumento del 30%
 
 */
 // Supongamos que el valor actual del dolar blue es de 200 pesos.
-const valorDolarBlue = 1200;
+const valorDolarBlue = 1300;
 
 // Precios base en dólares
 const precioConsultaParticularDolares = 10; 
-const osdecoseguro = 1900;
+const osdecoseguro = 2000;
 
 // Definimos los precios en pesos, aplicando la conversión del dolar blue.
 var precios = {
@@ -64,7 +64,7 @@ var precios = {
     noapto: (precioConsultaParticularDolares + (precioConsultaParticularDolares * 0.8)) * valorDolarBlue,
     portacion: (precioConsultaParticularDolares * 2.5) * valorDolarBlue,
     // 'caba' se calcula después de la creación del objeto 'precios'
-    mes: "DICIEMBRE 2023"
+    mes: "FEBRERO 2024"
 };
 
 // Ahora podemos añadir 'caba' al objeto 'precios'.
